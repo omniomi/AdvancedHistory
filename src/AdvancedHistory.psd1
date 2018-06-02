@@ -95,7 +95,7 @@ PrivateData = @{
     PSData = @{
 
         # Tags applied to this module. These help with module discovery in online galleries.
-        Tags = @('History','PSReadline History','Console','History Menu')
+        Tags = @('History','Console','Menu')
 
         # A URL to the license for this module.
         LicenseUri = 'https://github.com/omniomi/AdvancedHistory/blob/master/LICENSE.txt'
@@ -107,7 +107,7 @@ PrivateData = @{
         # IconUri = ''
 
         # ReleaseNotes of this module
-        ReleaseNotes = 'https://github.com/omniomi/AdvancedHistory/blob/master/ReleaseNotes.md'
+        # ReleaseNotes = 'https://github.com/omniomi/AdvancedHistory/blob/master/ReleaseNotes.md'
 
         # External dependent modules of this module
         # ExternalModuleDependencies = ''

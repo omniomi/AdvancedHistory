@@ -12,8 +12,6 @@ Add keyboard navigable and filterable history to Windows PowerShell and PowerShe
 
 #### Install from PSGallery
 
-> NOTE: This module is not yet publised -> Skip to Install from Source
-
 ```PowerShell
 Install-Module AdvancedHistory -Scope CurrentUser
 ```
