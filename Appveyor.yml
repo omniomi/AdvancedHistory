@@ -1,0 +1,37 @@
+version: 1.0.{build}
+skip_tags: true
+os: WMF 5
+build: off
+
+branches:
+  only:
+    - master
+
+skip_commits:
+    message: /skip\-build/
+    files:
+        - .vscode/
+        - README.md
+        - .gitattributes
+        - .gitignore
+        - RELEASENOTES.md
+        - CHANGELOG.md
+
+pull_requests:
+  do_not_increment_build_number: true
+
+install:
+  - ps: |
+      Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force | Out-Null
+      Install-Module Pester -MinimumVersion 4.3.1 -Scope CurrentUser -Force | Out-Null
+      Install-Module psake -Scope CurrentUser -Force | Out-Null
+      Install-Module PSScriptAnalyzer -Scope CurrentUser -Force | Out-Null
+
+test_script:
+  - ps: .\tools\appveyor.ps1 -Task Test
+
+build_script:
+  - ps: .\tools\appveyor.ps1 -Task Build
+
+on_finish:
+  - ps: .\tools\appveyor.ps1 -Task Finish
