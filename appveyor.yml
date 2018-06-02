@@ -25,7 +25,7 @@ install:
       Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force | Out-Null
       Install-Module Pester -MinimumVersion 4.3.1 -Scope CurrentUser -Force | Out-Null
       Install-Module psake -Scope CurrentUser -Force | Out-Null
-      Install-Module PSScriptAnalyzer -Scope CurrentUser -Force | Out-Null
+      Install-Module PSScriptAnalyzer -RequiredVersion 1.16.1 -Scope CurrentUser -Force | Out-Null
       Install-Module PSReadline -Scope CurrentUser -Force | Out-Null
 
 test_script:
