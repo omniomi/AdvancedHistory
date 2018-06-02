@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/github/omniomi/advancedhistory?branch=master&svg=true)](https://ci.appveyor.com/project/omniomi/advancedhistory/branch/master)
+
 # AdvancedHistory
 
 Add keyboard navigable and filterable history to Windows PowerShell and PowerShell Core. Once an item is selected the menu is cleared from the console but your buffer is not erased meaning you can still scroll up and view previously executed commands.
@@ -10,8 +12,10 @@ Add keyboard navigable and filterable history to Windows PowerShell and PowerShe
 
 #### Install from PSGallery
 
+> NOTE: This module is not yet publised -> Skip to Install from Source
+
 ```PowerShell
-Install-Module OmniPSTemplates -Scope CurrentUser
+Install-Module AdvancedHistory -Scope CurrentUser
 ```
 
 #### Install from Source
