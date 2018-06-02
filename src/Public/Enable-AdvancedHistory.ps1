@@ -62,9 +62,9 @@ function Enable-AdvancedHistory {
             )
             $History.Reverse()
             if ($Unique) {
-                $X = WriteMenu -Title $LocalizedData.Title -Entries ($History.ToArray() | Select-Object -Unique | Select-Object -First $Script:HistorySize)
+                $X = WriteMenu -Title $LocalizedData.Title -Items ($History.ToArray() | Select-Object -Unique | Select-Object -First $Script:HistorySize)
             } else {
-                $X = WriteMenu -Title $LocalizedData.Title -Entries ($History.ToArray() | Select-Object -First $Script:HistorySize)
+                $X = WriteMenu -Title $LocalizedData.Title -Items ($History.ToArray() | Select-Object -First $Script:HistorySize)
             }
             [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
             [Microsoft.PowerShell.PSConsoleReadLine]::Insert(($X -join "`n"))
