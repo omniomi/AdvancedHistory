@@ -26,6 +26,7 @@ install:
       Install-Module Pester -MinimumVersion 4.3.1 -Scope CurrentUser -Force | Out-Null
       Install-Module psake -Scope CurrentUser -Force | Out-Null
       Install-Module PSScriptAnalyzer -Scope CurrentUser -Force | Out-Null
+      Install-Module PSReadline -Scope CurrentUser -Force | Out-Null
 
 test_script:
   - ps: .\tools\appveyor.ps1 -Task Test

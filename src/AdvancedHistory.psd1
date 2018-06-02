@@ -51,7 +51,7 @@ Description = 'Add keyboard navigable and filterable history.'
 # ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
-RequiredModules = @('PSReadline')
+RequiredModules = 'PSReadline'
 
 # Assemblies that must be loaded prior to importing this module
 # RequiredAssemblies = @()
