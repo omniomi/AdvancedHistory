@@ -43,7 +43,7 @@ To only show unique commands from your history once (most recent execution) use 
 
 ### Override History Limit
 
-By default the AdvancedHistory will limit 256 the menu to items whether unique or not. To override the limit set `$Global:HistoryCountOverride = <number>` either in your PowerShell Profile or at the CLI as needed. For example, `$Global:HistoryCountOverride = 512`
+By default the AdvancedHistory will limit the menu to 256 items whether unique or not. To override the limit set `$Global:HistoryCountOverride = <number>` either in your PowerShell Profile or at the CLI as needed. For example, `$Global:HistoryCountOverride = 512`
 
 > NOTE: The history override must come before `Enable-AdvancedHistory`.
 > ```PowerShell
