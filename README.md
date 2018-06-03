@@ -6,6 +6,8 @@ Add keyboard navigable and filterable history to Windows PowerShell and PowerShe
 
 ![Screenshot](images/screenshot.png)
 
+This is an adaptation of an [example by Jeff Hicks on Petri.com](https://www.petri.com/more-efficient-powershell-with-psreadline) where he used the PSReadline History with `Out-GridView` to make selectable history. I liked the idea but wanted something that wouldn't take me out of the console. This is an early pass taking what I had in my profile and adapting it in to a module to make it easier to share but a number of improvements are planned.
+
 ## Setup
 
 ### Installation
@@ -55,7 +57,7 @@ By default the AdvancedHistory will limit the menu to 256 items whether unique o
 
 ## Usage
 
-To access the AdvancedHistory meny press either <kbd>F7</kbd> or the keyboard shortcut you specified when setting it up.
+To access the AdvancedHistory menu press either <kbd>F7</kbd> or the keyboard shortcut you specified when setting it up.
 
 ### Navigation
 
