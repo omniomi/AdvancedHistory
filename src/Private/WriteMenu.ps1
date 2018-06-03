@@ -139,7 +139,7 @@ function WriteMenu {
         }
         elseif (($InputKey.Key -eq 'LeftArrow') -or ($InputKey.Key -eq 'RightArrow')) {
             ClearMenu $PositionTop ($PageEntriesCount + $AddedLines)
-            WriteMenu -Entries $Items -Page $Page -Title $Title
+            WriteMenu -Items $Items -Page $Page -Title $Title
         }
     } catch {
         $PSCmdlet.ThrowTerminatingError($PSItem)
